@@ -86,7 +86,8 @@ augroup project
 	autocmd BufRead,BufNewFile *.hpp,*.cpp,*tpp set filetype=cpp.doxygen
 augroup END
 
-autocmd BufRead,BufNewFile *.tpl set filetype=html
+autocmd BufRead,BufNewFile *.tpl set filetype=css
+autocmd BufRead,BufNewFile *.template set filetype=htmldjango
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                  Undo persistant                                          "
@@ -152,12 +153,27 @@ map <Leader>fb :BufExplorer<CR>
 map <leader>fs :wa<CR>
 imap <leader>fs <ESC>:wa<CR>
 
-map <leader>fq :qa<CR>
-imap <leader>fq <ESC>:qa<CR>
 "split
 map <Leader>sv  :vsp<CR>
 map <Leader>sh  :split<CR>
 
+" Sélectionner tout
+map <Leader>a ggVG
+
+" Copier
+map <Leader>c "+y
+
+" Couper
+map <Leader>x "+x
+
+" Coller
+map <Leader>v "+gP
+
+map <Leader>t :set list <CR>
+map <Leader>tn :set list! <CR>
+
+map <Leader>q :qa! <CR>
+imap <leader>q <ESC>:qa<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                  Pluggins                                                 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -188,11 +204,10 @@ Plug 'mattn/emmet-vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'aperezdc/vim-template'
 
-Plug 'sjl/gundo.vim'
-map <leader>g :GundoToggle<CR>
-
 Plug 'tpope/vim-fugitive'
-"Plug 'ervandew/supertab'
+
+" Complete all with tab key
+Plug 'ervandew/supertab'
 
 Plug 'vim-scripts/bash-support.vim'
 Plug 'noah/vim256-color'
@@ -300,7 +315,7 @@ endif
 let g:neosnippet#enable_snipmate_compatibility = 1
 
 " Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.config/nvim/snippets/snippets'
+let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
 
 """Syntastic
 
@@ -391,28 +406,6 @@ let g:neocomplcache_force_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplcache_force_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"                  Raccourci                                                "
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Sélectionner tout
-map <Leader>a ggVG
-
-" Copier
-map <Leader>c "+y
-
-" Couper
-map <Leader>x "+x
-
-" Coller
-map <Leader>v "+gP
-
-
-map <Leader>t :set list <CR>
-map <Leader>tn :set list! <CR>
-
-map <Leader>q :qa! <CR>
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                  Themes                                                   "
