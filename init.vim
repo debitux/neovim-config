@@ -189,6 +189,7 @@ Plug 'bling/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'jlanzarotta/bufexplorer'
 
+Plug 'vim-scripts/colorizer'
 Plug 'spf13/vim-autoclose'
 let g:autoclose_vim_commentmode = 1
 
@@ -196,8 +197,6 @@ Plug 'vim-scripts/a.vim'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/taglist.vim'
-
- 
 Plug 'scrooloose/nerdcommenter'
 Plug 'luochen1990/rainbow'
 Plug 'honza/vim-snippets'
@@ -334,6 +333,7 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+
 """Autocompl
 
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
