@@ -194,6 +194,10 @@ let g:autoclose_vim_commentmode = 1
 
 Plug 'vim-scripts/a.vim'
 Plug 'scrooloose/syntastic'
+Plug 'majutsushi/tagbar'
+Plug 'vim-scripts/taglist.vim'
+
+ 
 Plug 'scrooloose/nerdcommenter'
 Plug 'luochen1990/rainbow'
 Plug 'honza/vim-snippets'
