@@ -413,6 +413,17 @@ let g:neocomplcache_force_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\
 " https://github.com/c9s/perlomni.vim
 let g:neocomplcache_force_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
+" TagList
+let g:Tlist_GainFocus_On_ToggleOpen = 1
+let g:Tlist_Use_Right_Window = 1
+let g:Tlist_WinWidth = 100
+let g:Tlist_Compact_Format = 0
+let g:Tlist_Enable_Fold_Column = 1 
+let g:Tlist_Display_Prototype = 1 
+let g:Tlist_Display_Tag_Scope = 1 
+let g:Tlist_Close_On_Select = 1 
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                  Themes                                                   "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
