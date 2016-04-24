@@ -434,9 +434,9 @@ set background=dark
 set listchars=tab:>-,trail:- " highlight tabs and trailing spaces
 if has("gui_running")
 	"set list
-	colorscheme molokai
+	colorscheme dbtx
 else
-	colorscheme molokai
+	colorscheme dbtx
 endif
 
 "remap mode visual and normal
