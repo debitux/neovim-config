@@ -6,21 +6,6 @@ let mapleader = ";"
 " let maplocalleader = "\\"
 set exrc
 
-" " Be smart when using tabs ;) 
-set smarttab 
-
-" nb space for tab
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
-" Use spaces instead of tabs 
-set expandtab
-
-set autoindent "Auto indent
-set smartindent
-set wrap "Wrap lines
-set secure
-set colorcolumn=80
 
 " Show line number
 set nu
@@ -44,9 +29,6 @@ set nohls
 set cursorline
 
 let &path.="src/include,"
-set cino=g1s,h1s,f0,p0,t0,+0,(0,
-" set cino=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+0,(0,u0,w1,m1 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                Fichier swap                                               "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -278,8 +260,29 @@ let g:rainbow_conf = {
 " All of your Plugins must be added before the following line
 filetype plugin indent on    " required
 
+ " Be smart when using tabs ;) 
+set smarttab 
+
+" nb space for tab
+set shiftwidth=4
+set tabstop=8
+set softtabstop=4
+" Use spaces instead of tabs 
+set expandtab
+
+"set autoindent 
+"set smartindent
+"set cindent
+set wrap "Wrap lines
+set secure
+set colorcolumn=79
+set textwidth=79
+set cino=g1s,h1s,f0,p0,t0,+4,(0,
+"set cino=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+0,(0,u0,w1,m1 
+
+"set comments=sr:/*,mb:*,ex:*/,://
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+"filetype plugin off
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -446,4 +449,5 @@ inoremap jj <esc>
 inoremap <esc> <Nop>
 vno v <esc>
 cnoremap <del> <C-c>
+
 
