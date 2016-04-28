@@ -201,6 +201,7 @@ Plug 'dag/vim-fish'
 Plug 'lervag/vimtex'
 " qt syntax highlight
 Plug 'kosl90/qt-highlight-vim'
+Plug 'godlygeek/tabular'
 " debitux
 Plug 'debitux/dbtx-highlight-vim'
 
@@ -277,7 +278,7 @@ set wrap "Wrap lines
 set secure
 set colorcolumn=79
 set textwidth=79
-set cino=f0,p0,t0,(0,:0,=0,l-4,g0,+0
+set cino=f0,p0,t0,(0,:0,=0,l-4,g0,+0,N-s
 "set cino=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+0,(0,u0,w1,m1 
 
 "set comments=sr:/*,mb:*,ex:*/,://
