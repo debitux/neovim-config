@@ -164,7 +164,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'Shougo/neocomplcache'
 Plug 'vim-scripts/sessionman.vim'
-"Plug 'vim-scripts/vst'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'bling/vim-airline'
@@ -204,9 +203,10 @@ Plug 'kosl90/qt-highlight-vim'
 Plug 'godlygeek/tabular'
 " debitux
 Plug 'debitux/dbtx-highlight-vim'
+" Plug 'mrtazz/DoxygenToolkit.vim'
+Plug 'vim-scripts/cpp_doxygen'
 
 call plug#end()
-
 " Gif config
 " EasyMotion
 "let g:EasyMotion_do_mapping = 0 " Disable default mappings
