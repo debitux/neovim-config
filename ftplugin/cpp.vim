@@ -23,3 +23,11 @@ imap <Leader>bc  <ESC>:TagbarToggle<CR>
 "tagiList
 map <Leader>bl  :TlistToggle<CR>
 imap <Leader>bl  <ESC>:TlistToggle<CR>
+
+"doxy hilight
+map <Leader>bd  :set filetype=cpp.doxygen<CR>
+imap <Leader>bd  <ESC>:set filetype=cpp.doxygen<CR>
+"cpp return
+map <Leader>bdc  :set filetype=cpp<CR>
+imap <Leader>bdc  <ESC>:set filetype=cpp<CR>
+

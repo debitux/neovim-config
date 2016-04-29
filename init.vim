@@ -63,10 +63,10 @@ endfunction
 "                  Chargement type fichiers                                 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-augroup project
-    autocmd!
-    autocmd BufRead,BufNewFile *.hpp,*.cpp,*tpp set filetype=cpp.doxygen
-augroup END
+"augroup project
+    "autocmd!
+    "autocmd BufRead,BufNewFile *.hpp,*.cpp,*tpp set filetype=cpp.doxygen
+"augroup END
 
 autocmd BufRead,BufNewFile *.tpl set filetype=css
 autocmd BufRead,BufNewFile *.template set filetype=htmldjango
@@ -151,11 +151,23 @@ map <Leader>x "+x
 " Coller
 map <Leader>v "+gP
 
-map <Leader>t :set list <CR>
+map <Leader>ti :set list <CR>
 map <Leader>tn :set list! <CR>
 
 map <Leader>q :qa! <CR>
 imap <leader>q <ESC>:qa<CR>
+
+"Tabularize
+vmap <Leader>t  :Tabularize /
+imap <Leader>t  <ESC>:Tabularize /
+
+"Tabularize =
+vmap <Leader>t=  :Tabularize /= <CR>
+imap <Leader>t=  <ESC>:Tabularize /= <CR>
+
+"Tabularizei *
+vmap <Leader>t*  :Tabularize /*\zs <CR>
+imap <Leader>t*  <ESC>:Tabularize /*\zs<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                  Pluggins                                                 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
